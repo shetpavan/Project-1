@@ -5,7 +5,7 @@ img = cv2.imread("images/football.jpg")
 img = cv2.resize(img, None, fx=0.7, fy=0.7)
 
 # Segmentation detector
-ys = YOLOSegmentation("yolov8m-seg.pt")
+ys = YOLOSegmentation("yolov8n-seg.pt")
 
 bboxes, classes, segmentations, scores = ys.detect(img)
 for bbox, class_id, seg, score in zip(bboxes, classes, segmentations, scores):
