@@ -1,7 +1,7 @@
 import cv2 as cv
 
 # Read 
-img = cv.imread('park.jpg')
+img = cv.imread('flower.jpg')
 cv.imshow('Park', img)
 
 # grayscale
